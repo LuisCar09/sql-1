@@ -166,3 +166,6 @@ SELECT *  FROM usuarios_lenguajes CROOS JOIN(SELECT SUM(edad) as edades FROM usu
 -- Ejercicio 40: Contar cuántos usuarios tienen un lenguaje asociado que comienza con la letra 'P' y tienen menos de 28 años.
 -- Tu respuesta aquí
 SELECT count(nombre) FROM usuarios_lenguajes WHERE edad < 28 AND lenguaje LIKE '%P%'
+
+-- Eliminar un usuario por su id
+DELETE FROM usuarios_lenguajes WHERE id_usuario = 1;
